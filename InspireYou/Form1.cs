@@ -16,5 +16,26 @@ namespace InspireYou
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+         var items = checkedListBox1.Items;
+            items.Add("Tired");
+            items.Add("Checked", true);
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int selected = checkedListBox1.SelectedIndex;
+            if(selected != -1)
+            {
+                this.Text = checkedListBox1.Items[selected].ToString();
+            }
+        }
     }
 }
