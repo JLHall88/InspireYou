@@ -52,10 +52,25 @@
     <Compile Include="..\..\..\..\OneDrive\Projects\INSPIREYOU.Designer.cs">
       <DependentUpon>INSPIREYOU.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procrastination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procrastination.Designer.cs">
+      <DependentUpon>Procrastination.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tired.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tired.Designer.cs">
+      <DependentUpon>Tired.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="..\..\..\..\OneDrive\Projects\INSPIREYOU.resx">
       <DependentUpon>INSPIREYOU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procrastination.resx">
+      <DependentUpon>Procrastination.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +81,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Tired.resx">
+      <DependentUpon>Tired.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
