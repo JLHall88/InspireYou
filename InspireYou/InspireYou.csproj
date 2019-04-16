@@ -52,6 +52,18 @@
     <Compile Include="..\..\..\..\OneDrive\Projects\INSPIREYOU.Designer.cs">
       <DependentUpon>INSPIREYOU.cs</DependentUpon>
     </Compile>
+    <Compile Include="Angry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Angry.Designer.cs">
+      <DependentUpon>Angry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Anxious.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anxious.Designer.cs">
+      <DependentUpon>Anxious.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procrastination.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,11 +72,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sad.Designer.cs">
+      <DependentUpon>Sad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sluggish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sluggish.Designer.cs">
+      <DependentUpon>Sluggish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thirsty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thirsty.Designer.cs">
+      <DependentUpon>Thirsty.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tired.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Tired.Designer.cs">
       <DependentUpon>Tired.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Writers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Writers.Designer.cs">
+      <DependentUpon>Writers.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="..\..\..\..\OneDrive\Projects\INSPIREYOU.resx">
       <DependentUpon>INSPIREYOU.cs</DependentUpon>
