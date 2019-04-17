@@ -52,7 +52,7 @@ namespace InspireYou
         {
             if (alarmhour == hour.ToString() && alarmminute == minute.ToString())
             {
-                axWindowsMediaPlayer1.URL = "Properties.Resources.Alarm_song";
+                axWindowsMediaPlayer1.URL = "";
             }
         }
         private void Tired_Load(object sender, EventArgs e)

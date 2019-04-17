@@ -32,24 +32,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tired));
             this.Tiredheading = new System.Windows.Forms.Label();
             this.ReturntoMain = new System.Windows.Forms.Button();
-            this.sheepBox1 = new System.Windows.Forms.PictureBox();
             this.linkcoffee = new System.Windows.Forms.LinkLabel();
-            this.pictureBoxcoffee = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Time = new System.Windows.Forms.Label();
             this.hourlabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.minutelabel = new System.Windows.Forms.Label();
             this.middlebox = new System.Windows.Forms.ComboBox();
-            this.labelthehour = new System.Windows.Forms.Label();
+            this.labelthetime = new System.Windows.Forms.Label();
             this.lowerbox = new System.Windows.Forms.ComboBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.alarmstart = new System.Windows.Forms.Button();
-            this.labelminuteonly = new System.Windows.Forms.Label();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
-            ((System.ComponentModel.ISupportInitialize)(this.sheepBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxcoffee)).BeginInit();
+            this.pictureBoxcoffee = new System.Windows.Forms.PictureBox();
+            this.sheepBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxcoffee)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sheepBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Tiredheading
@@ -75,42 +75,18 @@
             this.ReturntoMain.UseVisualStyleBackColor = true;
             this.ReturntoMain.Click += new System.EventHandler(this.ReturntoMain_Click);
             // 
-            // sheepBox1
-            // 
-            this.sheepBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.sheepBox1.Image = ((System.Drawing.Image)(resources.GetObject("sheepBox1.Image")));
-            this.sheepBox1.Location = new System.Drawing.Point(301, 256);
-            this.sheepBox1.Name = "sheepBox1";
-            this.sheepBox1.Size = new System.Drawing.Size(153, 146);
-            this.sheepBox1.TabIndex = 2;
-            this.sheepBox1.TabStop = false;
-            // 
             // linkcoffee
             // 
             this.linkcoffee.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.linkcoffee.AutoSize = true;
             this.linkcoffee.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkcoffee.Location = new System.Drawing.Point(68, 183);
+            this.linkcoffee.Location = new System.Drawing.Point(55, 183);
             this.linkcoffee.Name = "linkcoffee";
             this.linkcoffee.Size = new System.Drawing.Size(317, 40);
             this.linkcoffee.TabIndex = 1;
             this.linkcoffee.TabStop = true;
             this.linkcoffee.Text = "To find the nearest coffee source, click here\r\n\r\n";
             this.linkcoffee.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkcoffee_LinkClicked);
-            // 
-            // pictureBoxcoffee
-            // 
-            this.pictureBoxcoffee.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxcoffee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBoxcoffee.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxcoffee.Image")));
-            this.pictureBoxcoffee.InitialImage = null;
-            this.pictureBoxcoffee.Location = new System.Drawing.Point(155, 109);
-            this.pictureBoxcoffee.Name = "pictureBoxcoffee";
-            this.pictureBoxcoffee.Size = new System.Drawing.Size(133, 71);
-            this.pictureBoxcoffee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxcoffee.TabIndex = 0;
-            this.pictureBoxcoffee.TabStop = false;
-            this.pictureBoxcoffee.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -172,26 +148,26 @@
             this.middlebox.FormattingEnabled = true;
             this.middlebox.Location = new System.Drawing.Point(596, 149);
             this.middlebox.Name = "middlebox";
-            this.middlebox.Size = new System.Drawing.Size(120, 21);
+            this.middlebox.Size = new System.Drawing.Size(35, 21);
             this.middlebox.TabIndex = 8;
             // 
-            // labelthehour
+            // labelthetime
             // 
-            this.labelthehour.AutoSize = true;
-            this.labelthehour.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelthehour.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelthehour.Location = new System.Drawing.Point(499, 149);
-            this.labelthehour.Name = "labelthehour";
-            this.labelthehour.Size = new System.Drawing.Size(56, 24);
-            this.labelthehour.TabIndex = 9;
-            this.labelthehour.Text = "Hour";
+            this.labelthetime.AutoSize = true;
+            this.labelthetime.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelthetime.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelthetime.Location = new System.Drawing.Point(499, 149);
+            this.labelthetime.Name = "labelthetime";
+            this.labelthetime.Size = new System.Drawing.Size(75, 24);
+            this.labelthetime.TabIndex = 9;
+            this.labelthetime.Text = "Alarm:";
             // 
             // lowerbox
             // 
             this.lowerbox.FormattingEnabled = true;
-            this.lowerbox.Location = new System.Drawing.Point(597, 194);
+            this.lowerbox.Location = new System.Drawing.Point(680, 149);
             this.lowerbox.Name = "lowerbox";
-            this.lowerbox.Size = new System.Drawing.Size(120, 21);
+            this.lowerbox.Size = new System.Drawing.Size(37, 21);
             this.lowerbox.TabIndex = 10;
             // 
             // timer1
@@ -201,24 +177,13 @@
             // alarmstart
             // 
             this.alarmstart.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.alarmstart.Location = new System.Drawing.Point(618, 230);
+            this.alarmstart.Location = new System.Drawing.Point(618, 183);
             this.alarmstart.Name = "alarmstart";
             this.alarmstart.Size = new System.Drawing.Size(75, 23);
             this.alarmstart.TabIndex = 11;
             this.alarmstart.Text = "Set Alarm";
             this.alarmstart.UseVisualStyleBackColor = true;
             this.alarmstart.Click += new System.EventHandler(this.alarmstart_Click);
-            // 
-            // labelminuteonly
-            // 
-            this.labelminuteonly.AutoSize = true;
-            this.labelminuteonly.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelminuteonly.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelminuteonly.Location = new System.Drawing.Point(499, 191);
-            this.labelminuteonly.Name = "labelminuteonly";
-            this.labelminuteonly.Size = new System.Drawing.Size(74, 24);
-            this.labelminuteonly.TabIndex = 12;
-            this.labelminuteonly.Text = "Minute";
             // 
             // axWindowsMediaPlayer1
             // 
@@ -230,18 +195,53 @@
             this.axWindowsMediaPlayer1.TabIndex = 13;
             this.axWindowsMediaPlayer1.Visible = false;
             // 
+            // pictureBoxcoffee
+            // 
+            this.pictureBoxcoffee.BackgroundImage = global::InspireYou.Properties.Resources.coffee3;
+            this.pictureBoxcoffee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBoxcoffee.Image = global::InspireYou.Properties.Resources.coffee3;
+            this.pictureBoxcoffee.InitialImage = null;
+            this.pictureBoxcoffee.Location = new System.Drawing.Point(178, 60);
+            this.pictureBoxcoffee.Name = "pictureBoxcoffee";
+            this.pictureBoxcoffee.Size = new System.Drawing.Size(92, 110);
+            this.pictureBoxcoffee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxcoffee.TabIndex = 0;
+            this.pictureBoxcoffee.TabStop = false;
+            this.pictureBoxcoffee.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // sheepBox1
+            // 
+            this.sheepBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.sheepBox1.Image = ((System.Drawing.Image)(resources.GetObject("sheepBox1.Image")));
+            this.sheepBox1.Location = new System.Drawing.Point(288, 256);
+            this.sheepBox1.Name = "sheepBox1";
+            this.sheepBox1.Size = new System.Drawing.Size(153, 146);
+            this.sheepBox1.TabIndex = 2;
+            this.sheepBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(650, 146);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(15, 24);
+            this.label2.TabIndex = 14;
+            this.label2.Text = ":";
+            // 
             // Tired
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(816, 541);
+            this.ClientSize = new System.Drawing.Size(791, 541);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.axWindowsMediaPlayer1);
-            this.Controls.Add(this.labelminuteonly);
             this.Controls.Add(this.alarmstart);
             this.Controls.Add(this.lowerbox);
-            this.Controls.Add(this.labelthehour);
+            this.Controls.Add(this.labelthetime);
             this.Controls.Add(this.middlebox);
             this.Controls.Add(this.minutelabel);
             this.Controls.Add(this.label3);
@@ -258,9 +258,9 @@
             this.Name = "Tired";
             this.Text = "Tired";
             this.Load += new System.EventHandler(this.Tired_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.sheepBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxcoffee)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxcoffee)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sheepBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,11 +279,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label minutelabel;
         private System.Windows.Forms.ComboBox middlebox;
-        private System.Windows.Forms.Label labelthehour;
+        private System.Windows.Forms.Label labelthetime;
         private System.Windows.Forms.ComboBox lowerbox;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button alarmstart;
-        private System.Windows.Forms.Label labelminuteonly;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private System.Windows.Forms.Label label2;
     }
 }
